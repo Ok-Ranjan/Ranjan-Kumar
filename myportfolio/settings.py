@@ -124,11 +124,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
-SENDGRID_API_KEY = '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'
-SENDGRID_SANDBOX_MODE_IN_DEBUG = False  # Change to True for testing without sending emails
-SENDGRID_ECHO_TO_STDOUT = True
-DEFAULT_FROM_EMAIL = 'ranjan.cse82@gmail.com'
+# EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
+# SENDGRID_API_KEY = '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'
+# SENDGRID_SANDBOX_MODE_IN_DEBUG = False  # Change to True for testing without sending emails
+# SENDGRID_ECHO_TO_STDOUT = True
+# DEFAULT_FROM_EMAIL = 'ranjan.cse82@gmail.com'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
