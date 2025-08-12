@@ -1,7 +1,10 @@
+import os
 import sendgrid
 from sendgrid.helpers.mail import Mail
+from dotenv import load_dotenv
 
-sg = sendgrid.SendGridAPIClient(api_key="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")
+load_dotenv() # load .env file
+sg = sendgrid.SendGridAPIClient(api_key=os.getenv("SENDGRID_API_KEY"))
 email = Mail(
     from_email='ranjan.cse82@gmail.com',
     to_emails='ranjannp802114@gmail.com',
