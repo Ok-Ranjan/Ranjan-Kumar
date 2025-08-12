@@ -9,7 +9,10 @@ email = Mail(
     plain_text_content='Hello from SendGrid API direct test!'
 )
 
-response = sg.send(email)
-print(response.status_code)
-print(response.body)
-print(response.headers)
+try:
+    response = sg.send(email)
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+except Exception as e:
+    print(f"Error: {e}")
